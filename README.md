@@ -39,7 +39,7 @@ In this project you'll build an app that will keep track of memebers of a team. 
 - [x] Render your `Form` component in `App`. The `App` component should hand down through props any callback(s) needed for `Form` to do its job (adding new members to your team members state on submit).
 
 Now you are finished with MVP! Move on to the stretch goals at the bottom. The first is to add the functionality to edit members. As this is a very complicated process, steps have been included here to help you through that.
-
+ 
 ### Task 2b: Exit Ticket
 
 Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/sWqBFjaYTdNm4wbjZ/qSjimc6Js9MnbZ).
