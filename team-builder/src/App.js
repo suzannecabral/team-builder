@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import './App.css';
-import Form from './Form'
+import TeamForm from './TeamForm'
 import { tempTeam } from './constants'
+import TeamMember from './TeamMember';
 
 
 function App() {
-  const [teamMembers,setTeamMembers] = useState([tempTeam])
-  console.log('teamMembers Initial State: ',teamMembers)
+  const [teamMembers,setTeamMembers] = useState(tempTeam)
+
+  // console.log('teaMembers Initial State: ',teamMembers)
   return (
     <div className="App">
       <header>
@@ -16,12 +18,15 @@ function App() {
       </header>
       <div>
         {
-          teamMembers[0].map((mem,idx) => {
-          return <p key={idx}>{mem.name}, {mem.age}, {mem.role}</p>
+          teamMembers.map((mem,idx) => {
+          return <TeamMember member={mem} key={idx}/>
           })
         }
       </div>
-      <Form />
+      <TeamForm 
+      teamMembers={teamMembers}
+      setTeamMembers={setTeamMembers}
+      />
     </div>
   );
 }
