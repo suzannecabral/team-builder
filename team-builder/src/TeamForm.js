@@ -41,7 +41,7 @@ export default function TeamForm(props) {
                 <input name='age' type='text' onChange={change} />
                 <label>Role:</label>
                 <input name='role' type='text' onChange={change} />
-                <label>Elements:</label>
+                <label>Bending:</label>
                 <input name='bending' type='text' onChange={change} />     
             <button type='submit'>Submit</button>
             </form>
